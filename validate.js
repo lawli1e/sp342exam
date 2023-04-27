@@ -13,6 +13,8 @@ function checkTicketNo() {
   let num = (document.getElementById("ticknum").value).trim();
   if (isNaN(num)) {
     return false;
+  }else if (num <= 0 || num >= 6) {
+	return false;
   } else {
 	return true;
   }
