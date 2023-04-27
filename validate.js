@@ -2,6 +2,8 @@ function checkNID() {
   let nid = (document.getElementById("nid").value).trim();
   if (nid.length != 13) {
     return false;
+  }else if(isNaN(nid)){
+	return false
   } else {
 	return true;
   }
